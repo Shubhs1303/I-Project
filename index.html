@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Storytelling</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="story-container">
+        <h1>Interactive Story: The Adventure Begins</h1>
+        <p id="story-text">Once upon a time...</p>
+        <div class="choices">
+            <button id="choice1">Choice 1</button>
+            <button id="choice2">Choice 2</button>
+        </div>
+    </div>
+
+    <script>
+        // Add your JavaScript code here
+        const storyText = document.getElementById('story-text');
+        const choice1 = document.getElementById('choice1');
+        const choice2 = document.getElementById('choice2');
+
+        // Initial story text
+        storyText.textContent = 'Once upon a time...';
+
+        // Define the first story branch
+        choice1.addEventListener('click', () => {
+            storyText.textContent = 'You chose option 1. This is where the story goes for choice 1.';
+            // Add logic for further choices or story progression here
+        });
+
+        // Define the second story branch
+        choice2.addEventListener('click', () => {
+            storyText.textContent = 'You chose option 2. This is where the story goes for choice 2.';
+            // Add logic for further choices or story progression here
+        });
+    </script>
+</body>
+</html>
